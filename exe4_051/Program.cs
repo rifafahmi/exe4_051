@@ -36,7 +36,21 @@ namespace exe4_051
         public void push (int element)
         {
             Node fresh;
+            fresh = new Node(element, null);
+
+            fresh.next = top;
+            top = fresh;
+            Console.WriteLine("\n" + element +" pushed. ");
+
 
         }
+        public void pop()
+        {
+            Console.WriteLine("\nThe poped element is :" + top.info);
+            top = top.next;
+
+
+        }
+
     }
 }

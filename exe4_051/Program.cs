@@ -82,6 +82,9 @@ namespace exe4_051
                 string Input = Console.ReadLine();
                 char ch = Convert.ToChar(Input == "" ? "0" : Input);
                 switch (ch)
+                {
+                    case 1
+                }
             }
         }
 

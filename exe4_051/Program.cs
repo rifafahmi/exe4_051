@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 
 namespace exe4_051
-{   
+{
     class Node
     {
         public int info;
         public Node next;
-        public Node(int 1, Node n)
+        public Node(int r, Node a)
         {
             info = r;
             next = a;
@@ -33,14 +33,14 @@ namespace exe4_051
                 return (false);
 
         }
-        public void push (int element)
+        public void push(int element)
         {
             Node fresh;
             fresh = new Node(element, null);
 
             fresh.next = top;
             top = fresh;
-            Console.WriteLine("\n" + element +" pushed. ");
+            Console.WriteLine("\n" + element + " pushed. ");
 
 
         }
@@ -100,10 +100,18 @@ namespace exe4_051
                         s.display();
                         break;
                     case '4':
-                        return
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid Choice");
+                        break;
 
                 }
+            }
+
+
+
         }
+
 
     }
 }

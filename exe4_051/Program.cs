@@ -51,6 +51,23 @@ namespace exe4_051
 
 
         }
+        public void display()
+        {
+            Node tmp;
+            if (empty())
+                Console.WriteLine("\nStack Empty");
+            else
+            {
+
+                for (tmp = top; tmp != null; tmp = tmp.next)
+                {
+                    Console.WriteLine(tmp.info);
+
+                }
+                Console.WriteLine();
+            }
+        }
+
 
     }
 }

@@ -93,11 +93,12 @@ namespace exe4_051
                         {
                             Console.WriteLine("\nSTack empty");
                             break;
-
-
-
-
                         }
+                        s.pop();
+                        break;
+                    case '3';
+                        s.display();
+
                 }
         }
 

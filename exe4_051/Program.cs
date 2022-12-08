@@ -98,6 +98,7 @@ namespace exe4_051
                         break;
                     case '3';
                         s.display();
+                        break;
 
                 }
         }
